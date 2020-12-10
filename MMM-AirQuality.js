@@ -40,7 +40,7 @@ Module.register('MMM-AirQuality', {
 	html: {
 		icon: '<i class="fa fa-leaf"></i>',
 		city: '<div class="xsmall">{0}</div>',
-		quality: '<div>{0} {1}{2}</div>'
+		quality: '<div class="small">{0} {1}{2}</div>'
 	},
 	getScripts: function() {
 		return [
