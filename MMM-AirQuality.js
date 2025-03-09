@@ -11,6 +11,7 @@ Module.register('MMM-AirQuality', {
     location: '',
     showLocation: true,
     showIndex: true,
+    showHeader: true,
     appendLocationNameToHeader: true,
     updateInterval: 30, // every 30 minutes
     animationSpeed: 1000,
@@ -65,6 +66,9 @@ Module.register('MMM-AirQuality', {
   },
   // Override getHeader method.
   getHeader: function () {
+    if (this.config.showHeader == false)
+      return '';
+
     let header = ''
     if (this.data.header !== '') {
       if (this.data.header === undefined) {
@@ -109,6 +113,7 @@ Module.register('MMM-AirQuality', {
     return {
       en: 'l10n/en.json', // fallback language
       de: 'l10n/de.json',
+      ko: 'l10n/ko.json',
     }
   },
   getScripts: function () {

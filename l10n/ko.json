@@ -1,0 +1,10 @@
+{
+  "HEADER": "공기 질",
+  "GOOD": "좋음",
+  "MODERATE": "보통",
+  "UNHEALTHY_FOR_SENSITIVE_GROUPS": "민감군에 불건강",
+  "UNHEALTHY": "불건강",
+  "VERY_UNHEALTHY": "매우 불건강",
+  "HAZARDOUS": "위험",
+  "UNKNOWN": "알 수 없음"
+}
